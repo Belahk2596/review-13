@@ -6,7 +6,7 @@
 
 ```jsx
 [1, 2, 3].map(
-  // Your code here
+  (number) => number * 2;
 );
 ```
 
@@ -17,23 +17,29 @@
 
 ```jsx
 function IceCreamShowcase() {
-  const iceCreamFlavors [
+  const iceCreamFlavors = [
     "Rockmelon and Lime", "Cookies & Cream", "Strawberry Cookies & Cream",
-    "Hokey Pokey", 'Vanilla', 'Lime and Coconut';
+    "Hokey Pokey", "Vanilla", "Lime and Coconut"
   ];
 
   return (
-    <h1>Ice Cream!
+    <>
+    <h1>Ice Cream!</h1>
 
     <ul>
-    iceCreamFlavors.map(() => {
-      <li>flavor<li>
-    });
+    {iceCreamFlavors.map((element) => {
+      <li>{element}<li>
+    })};
     </ul>
+    </>
   )
 }
+
+export default IceCreamShowcase;
 ```
 
 ## 3
 
 - Name something you took away from Dan Walker's chat this morning
+
+Redundancy is a normal thing in the tech world.
